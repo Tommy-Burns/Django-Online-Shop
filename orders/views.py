@@ -1,10 +1,10 @@
 from django.shortcuts import render
-
-from orders.forms import OrderCreationForm
-from orders.models import OrderItem
+from .models import OrderItem
+from .forms import OrderCreationForm
+# from .tasks import order_created
 from cart.cart import Cart
 
-# Create your views here.
+
 def order_create(request):
     cart = Cart(request)
     if request.method == 'POST':
@@ -17,10 +17,17 @@ def order_create(request):
                     product=item['product'],
                     price=item['price'],
                     quantity=item['quantity']
-                )
+                    )
+            # clear the cart
             cart.clear()
             # launch asynchronous task
             # order_created.delay(order.id)
             return render(request, 'orders/order/created.xhtml', {
-                'order': order,
-            })
+                'order': order
+                })
+    else:
+        form = OrderCreationForm()
+    return render(request, 'orders/order/create.xhtml', {
+        'cart': cart,
+        'form': form
+        })
