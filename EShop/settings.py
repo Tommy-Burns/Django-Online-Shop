@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from .env.details import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,9 @@ CART_SESSION_ID = 'cart'
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 0
+
+
+# Stripe settings
+STRIPE_PUBLISHABLE_KEY = STRIPE_PUBLISHABLE_KEY # Publishable key
+STRIPE_SECRET_KEY = STRIPE_SECRET_KEY # Secret key
+STRIPE_API_VERSION = '2022-08-01'
