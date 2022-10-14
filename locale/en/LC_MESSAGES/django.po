@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-14 01:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\EShop\settings.py:118
+msgid "English"
+msgstr ""
+
+#: .\EShop\settings.py:119
+msgid "Spanish"
+msgstr ""
+
+#: .\EShop\urls.py:27
+msgid "cart/"
+msgstr ""
+
+#: .\EShop\urls.py:28
+msgid "orders/"
+msgstr ""
+
+#: .\EShop\urls.py:29
+msgid "payment/"
+msgstr ""
+
+#: .\EShop\urls.py:30
+msgid "coupons/"
+msgstr ""
+
+#: .\cart\forms.py:11
+msgid "Quantity"
+msgstr ""
+
+#: .\coupons\forms.py:5
+msgid "Coupon"
+msgstr ""
+
+#: .\payment\urls.py:10
+msgid "process/"
+msgstr ""
+
+#: .\payment\urls.py:11
+msgid "completed/"
+msgstr ""
+
+#: .\payment\urls.py:12
+msgid "canceled/"
+msgstr ""
